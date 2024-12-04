@@ -9,7 +9,7 @@ function mostrarBienvenida() {
     const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
     if (!usuarioLogueado) {
         alert("No estás logueado. Redirigiendo al login.");
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
         return;
     }
     document.getElementById('mensajeBienvenida').textContent = `Bienvenido, ${usuarioLogueado.nombre}`;
@@ -132,5 +132,5 @@ function guardarCambiosUsuario() {
 function cerrarSesion() {
     localStorage.removeItem('usuarioLogueado');
     alert("Sesión cerrada.");
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }

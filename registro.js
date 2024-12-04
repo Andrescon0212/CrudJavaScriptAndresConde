@@ -16,5 +16,5 @@ function RegistroUsuario() {
     usuarios.push(user);
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
     alert("Usuario registrado correctamente.");
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
